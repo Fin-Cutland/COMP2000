@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holiday Requests"/>
+
+        <Switch
+            android:id="@+id/switch_holiday_requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTextColor="@android:color/white"
+            android:trackTint="@android:color/holo_green_light"
+            android:thumbTint="@android:color/white"
+            android:minHeight="80dp"        <!-- Increased height for better touch target -->
+        android:minWidth="160dp"         <!-- Increased width for better touch target -->
+        android:padding="20dp"          <!-- Add padding for extra space -->
+        android:layout_marginStart="8dp"/>  <!-- Add margin for spacing -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Personal Updates"/>
+
+        <Switch
+            android:id="@+id/switch_personal_updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTextColor="@android:color/white"
+            android:trackTint="@android:color/holo_green_light"
+            android:thumbTint="@android:color/white"
+            android:minHeight="80dp"        <!-- Increased height for better touch target -->
+        android:minWidth="160dp"         <!-- Increased width for better touch target -->
+        android:padding="20dp"          <!-- Add padding for extra space -->
+        android:layout_marginStart="8dp"/>  <!-- Add margin for spacing -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sound"/>
+
+        <Switch
+            android:id="@+id/switch_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTextColor="@android:color/white"
+            android:trackTint="@android:color/holo_green_light"
+            android:thumbTint="@android:color/white"
+            android:minHeight="80dp"        <!-- Increased height for better touch target -->
+        android:minWidth="160dp"         <!-- Increased width for better touch target -->
+        android:padding="20dp"          <!-- Add padding for extra space -->
+        android:layout_marginStart="8dp"/>  <!-- Add margin for spacing -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vibration"/>
+
+        <Switch
+            android:id="@+id/switch_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTextColor="@android:color/white"
+            android:trackTint="@android:color/holo_green_light"
+            android:thumbTint="@android:color/white"
+            android:minHeight="80dp"        <!-- Increased height for better touch target -->
+        android:minWidth="160dp"         <!-- Increased width for better touch target -->
+        android:padding="20dp"          <!-- Add padding for extra space -->
+        android:layout_marginStart="8dp"/>  <!-- Add margin for spacing -->
+    </LinearLayout>
+</LinearLayout>
