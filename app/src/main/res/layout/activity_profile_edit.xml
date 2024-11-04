@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Title for the page -->
+    <TextView
+        android:id="@+id/text_employee_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Editable Email Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAB8E4"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Editable Position Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAB8E4"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edit_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter position"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Editable Date of Hire Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAB8E4"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Hire"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edit_date_of_hire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter date of hire"
+            android:inputType="date"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:backgroundTint="#6200EA"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
